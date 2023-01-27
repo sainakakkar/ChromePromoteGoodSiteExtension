@@ -1,0 +1,23 @@
+{
+   "background": {
+      "service_worker": "async.js"
+   },
+   "content_scripts": [ {
+      "js": [ "mainscript2.js" ],
+      "matches": [ "*://*.youtube.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Teen Cyber Shield – no recommendations",
+   "host_permissions": [ "*://*.youtube.com/" ],
+   "icons": {
+      "128": "icon.png",
+      "16": "icon.png",
+      "32": "icon.png",
+      "48": "icon.png"
+   },
+   "manifest_version": 3,
+   "name": "Teen Cyber Shield – no recommendations",
+   "permissions": [ "webNavigation", "scripting", "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.1"
+}
